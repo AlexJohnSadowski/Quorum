@@ -4,12 +4,14 @@ import Header from "../components/Navbar/Header"
 
 import LP from "../components/Mainpage/LP"
 import About from "../components/Mainpage/About"
+import Footer from '../components/Footer/Footer'
 
 const IndexPage = () => (
   <>
     <Header />
     <LP />
     <About />
+    <Footer />
   </>
 )
 

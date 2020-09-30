@@ -19,7 +19,7 @@ const Banner = () => {
           }
         }
       }
-      three: file(relativePath: { eq: "7.jpg" }) {
+      three: file(relativePath: { eq: "11.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
@@ -44,6 +44,7 @@ const Banner = () => {
         <div className="bottom-left-text">
             TAKE A DEEP DIVE
         </div>
+        <div className="fixed-misc">New urban collection 2020</div>
       </div>
     </div>
   )
