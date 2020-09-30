@@ -66,7 +66,7 @@ nav {
 .logo {
   grid-area: logo;
   justify-self: start;
-  margin-left:5%;
+  margin-left: 5%;
   font-size: 4vh;
   font-family: "Helvetica Neue", "Segoe UI", "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -308,8 +308,14 @@ nav {
 .container {
   height: 80vh;
   width: 90%;
-  margin: 0 5% 0 5%;
+  margin: 0 5% 15% 5%;
 }
+
+.container-fluid {
+    height: 80vh;
+    width: 100%;
+    margin: 0 0 15% 0;
+  }
 
 .landing-page {
   display: grid;
@@ -340,12 +346,12 @@ nav {
   justify-self: end;
 }
 
-.bottom-left-text{
-    grid-area:tx;
-    font-size:2vh;
-    font-weight: 600;
-    justify-self: left;
-    align-self: end;
+.bottom-left-text {
+  grid-area: tx;
+  font-size: 2vh;
+  font-weight: 600;
+  justify-self: left;
+  align-self: end;
 }
 
 .main-text {
@@ -360,6 +366,77 @@ nav {
   transform: translateY(-50%);
   text-align: center;
   letter-spacing: 4vh;
-  font-weight:600;
-  display:inline;
+  font-weight: 600;
+  display: inline;
 }
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  margin: 0 3% 0 3%;
+  height:80vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "tx .  pj"
+    "tx pd pj"
+    "tx .  pj";
+}
+
+.text-about {
+  grid-area: tx;
+  .title {
+    font-size: 4vh;
+    font-weight: 700;
+  }
+  .text {
+    font-size: 2vh;
+    line-height: 200%;
+  }
+}
+
+.image-about-one {
+  grid-area: pj;
+  width: 60%;
+  justify-self: end;
+  z-index:9;
+}
+
+.image-about-two {
+  grid-area: pj;
+  width: 60%;
+  justify-self: left;
+  align-self: end;
+  z-index:9;
+  
+}
+
+
+
+.black-box {
+    background: black;
+    height: 35%;
+    width: 120%;
+    margin-top:40%;
+    grid-area:pj;
+    align-self:center;
+    transform: translateY(-50%);
+    &.overlay {
+      z-index: 10;
+      background: #189797;
+      mix-blend-mode: overlay;
+    }
+  }
+
+  .red-box {
+    background: red;
+    opacity:0.3;
+    height: 30%;
+    width: 120%;
+    margin-top:80%;
+    margin-left:40%;
+    grid-area:pj;
+    align-self:center;
+    transform: translateY(-50%);
+    z-index:10;
+  }
