@@ -76,7 +76,7 @@ nav {
 
 .side-menu {
   grid-area: menu;
-  width:80vh;
+  width: 80vh;
   font-size: 2vh;
   justify-self: center;
   align-self: center;
@@ -104,10 +104,9 @@ nav {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
-  @media(min-width:769px){
-    display:none;
+  @media (min-width: 769px) {
+    display: none;
   }
-  
 
   + label {
     position: fixed;
@@ -118,10 +117,9 @@ nav {
     border-radius: 50%;
     padding: 1vh;
     background: transparent;
-    @media(min-width:769px){
-      display:none;
+    @media (min-width: 769px) {
+      display: none;
     }
-    
   }
 }
 
@@ -144,12 +142,11 @@ nav {
 }
 
 .icon--menu {
-  stroke:black;
-
+  stroke: black;
 }
 
 .icon--close {
-    position: relative;
+  position: relative;
   stroke: white;
   transform: translateX(-100%);
 }
@@ -173,7 +170,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:black;
+    background-color: black;
     transform-origin: 0 50%;
     z-index: -1;
   }
@@ -203,7 +200,7 @@ nav {
       background-color: black;
       transform-origin: 0 50%;
       transform: translateX(-100%) skew(15deg);
-      z-index:12;
+      z-index: 12;
     }
   }
 
@@ -248,7 +245,7 @@ nav {
   ~ .main-navigation {
     transition-duration: 0s;
     transform: translateX(0);
-    z-index:13;
+    z-index: 13;
 
     &:after {
       animation: nav-bg var(--nav-duration) var(--ease) forwards;
@@ -326,21 +323,20 @@ nav {
   color: white;
   mix-blend-mode: difference;
   z-index: 12;
-  @media(max-width:768px){
-    right:-140px;
+  @media (max-width: 768px) {
+    right: -140px;
   }
-  @media(max-width:576px){
-    display:none;
+  @media (max-width: 576px) {
+    display: none;
   }
 }
 
 .container {
-  
   height: 80vh;
   width: 90%;
   margin: 0 5% 15% 5%;
-  @media(max-width:375px){
-    height:70vh;
+  @media (max-width: 375px) {
+    height: 70vh;
   }
 }
 
@@ -352,8 +348,8 @@ nav {
 }
 
 .landing-page {
-  @media (min-width:1024px){
-    overflow:hidden;
+  @media (min-width: 769px) {
+    overflow: hidden;
     display: grid;
     height: 80vh;
     grid-template-columns: 1fr 1fr 1fr;
@@ -361,24 +357,29 @@ nav {
       "lp mp rp"
       "tx  mp rp"
       ". . .";
-  
   }
- 
-
 }
 
 .main-photo {
   grid-area: mp;
-  width: 100%;
   align-self: end;
+  @media (min-width: 500px) {
+    width: 60%;
+  }
+  @media (min-width: 767px) {
+    width: 100%;
+    align-self: end;
+  }
+
+  
 }
 
 .left-photo {
   grid-area: lp;
   width: 40%;
   justify-self: center;
-  @media(max-width:1024px){
-    display:none;
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -387,8 +388,8 @@ nav {
   width: 55%;
   align-self: flex-end;
   justify-self: end;
-  @media(max-width:1024px){
-    display:none;
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -414,12 +415,12 @@ nav {
   letter-spacing: 4vh;
   font-weight: 600;
   display: inline;
-  @media(max-width:768px){
-    top:80%
+  @media (max-width: 768px) {
+    top: 80%;
   }
-  @media(max-width:480px){
-    top:30%;
-    font-size:15vw;
+  @media (max-width: 480px) {
+    top: 30%;
+    font-size: 15vw;
     letter-spacing: 2vh;
   }
 }
@@ -436,13 +437,13 @@ nav {
     "tx pd pj"
     "tx .  pj";
 
-    @media(max-width:1024px){
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-      'tx pj'
-      '. pj'
-      '.  .'
-    }
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "tx pj"
+      ". pj"
+      ".  .";
+  }
 }
 
 .text-about {
@@ -462,8 +463,8 @@ nav {
   width: 60%;
   justify-self: end;
   z-index: 9;
-  @media(max-width:768px){
-    width:80%;
+  @media (max-width: 768px) {
+    width: 80%;
     justify-self: center;
   }
 }
@@ -474,31 +475,31 @@ nav {
   justify-self: left;
   align-self: end;
   z-index: 9;
-  @media(max-width:768px){
-    width:80%;
+  @media (max-width: 768px) {
+    width: 80%;
     justify-self: center;
-  align-self: end;
+    align-self: end;
   }
-  @media(max-width:568px){
-    width:80%;
+  @media (max-width: 568px) {
+    width: 80%;
     justify-self: center;
-  align-self: center;
+    align-self: center;
   }
 }
 
 .image-about-three {
-  @media(min-width:768px){
-    display:none;
+  @media (min-width: 768px) {
+    display: none;
   }
   grid-area: pj;
   width: 60%;
   justify-self: left;
   align-self: center;
   z-index: 9;
-  @media(max-width:768px){
-    width:80%;
+  @media (max-width: 768px) {
+    width: 80%;
     justify-self: center;
-  align-self: end;
+    align-self: end;
   }
 }
 
@@ -515,8 +516,8 @@ nav {
     background: #189797;
     mix-blend-mode: overlay;
   }
-  @media(max-width:768px){
-    display:none;
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -531,8 +532,8 @@ nav {
   align-self: center;
   transform: translateY(-50%);
   z-index: 10;
-  @media(max-width:768px){
-    display:none;
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -545,13 +546,13 @@ nav {
   height: 20vh;
   background: black;
   margin: 10% 0 5% 0;
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     margin: 40% 0 5% 0;
   }
-  @media(max-width:568px){
+  @media (max-width: 568px) {
     margin: 80% 0 5% 0;
   }
-  @media(max-width:375px){
+  @media (max-width: 375px) {
     margin: 100% 0 5% 0;
   }
 
@@ -621,12 +622,11 @@ nav {
   }
 }
 
+.four-oh-four {
+  font-size: 25vh;
+  text-align: center;
 
-.four-oh-four{
-  font-size:25vh;
-  text-align:center;
-
-  .four-subtitle{
-    font-size:5vh;
+  .four-subtitle {
+    font-size: 5vh;
   }
 }
