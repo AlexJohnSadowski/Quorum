@@ -1,5 +1,5 @@
 ## Quorum - Fashion Atelier
-### www.quorum-fashion.netlify.app
+### https://quorum-fashion.netlify.app/
 
 Project made for a fashion atelier made with  Gatsby. Urban theme.
 
