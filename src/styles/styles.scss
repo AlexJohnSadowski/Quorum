@@ -363,7 +363,7 @@ nav {
 .main-photo {
   grid-area: mp;
   align-self: end;
-  @media (min-width: 500px) {
+  @media (min-width: 450px) {
     width: 60%;
   }
   @media (min-width: 767px) {
