@@ -1,8 +1,9 @@
 ## Quorum - Fashion Atelier
-![easter egg](https://i.ibb.co/pdRmdJq/Screenshot-2020-09-30-Screenshot-2.jpg)
+### www.quorum-fashion.netlify.app
 
 Project made for a fashion atelier made with  Gatsby. Urban theme.
 
-Demo: <coming soon>
 
-The project is still in progress, I need to still add better grids for RWD + adjust some parts of the code for other browsers.
+The project is still in progress, I need to still add better grids for RWD + adjust some parts of the code for other browsers and add some extra content, but you can already see the demo ;)
+
+Enjoy!
