@@ -329,6 +329,9 @@ nav {
   @media(max-width:768px){
     right:-140px;
   }
+  @media(max-width:576px){
+    display:none;
+  }
 }
 
 .container {
@@ -336,6 +339,9 @@ nav {
   height: 80vh;
   width: 90%;
   margin: 0 5% 15% 5%;
+  @media(max-width:375px){
+    height:70vh;
+  }
 }
 
 .container-fluid {
@@ -411,7 +417,7 @@ nav {
     top:80%
   }
   @media(max-width:480px){
-    top:70%;
+    top:30%;
     font-size:15vw;
     letter-spacing: 2vh;
   }
@@ -470,7 +476,28 @@ nav {
   @media(max-width:768px){
     width:80%;
     justify-self: center;
+  align-self: end;
+  }
+  @media(max-width:568px){
+    width:80%;
+    justify-self: center;
   align-self: center;
+  }
+}
+
+.image-about-three {
+  @media(min-width:768px){
+    display:none;
+  }
+  grid-area: pj;
+  width: 60%;
+  justify-self: left;
+  align-self: center;
+  z-index: 9;
+  @media(max-width:768px){
+    width:80%;
+    justify-self: center;
+  align-self: end;
   }
 }
 
@@ -517,8 +544,14 @@ nav {
   height: 20vh;
   background: black;
   margin: 10% 0 5% 0;
+  @media(max-width:768px){
+    margin: 40% 0 5% 0;
+  }
   @media(max-width:568px){
-    margin: 70% 0 5% 0;
+    margin: 80% 0 5% 0;
+  }
+  @media(max-width:375px){
+    margin: 100% 0 5% 0;
   }
 
   .footer-logo {

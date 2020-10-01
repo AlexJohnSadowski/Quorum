@@ -19,6 +19,13 @@ const About = () => {
           }
         }
       }
+      three: file(relativePath: { eq: "6.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -47,6 +54,9 @@ const About = () => {
         </div>
         <div className="image-about-two">
           <Img fluid={data.two.childImageSharp.fluid} />
+        </div>
+        <div className="image-about-three">
+          <Img fluid={data.three.childImageSharp.fluid} />
         </div>
         <div className="black-box"></div>
         <div className="black-box overlay"></div>
