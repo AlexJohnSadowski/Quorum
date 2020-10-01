@@ -76,21 +76,21 @@ nav {
 
 .side-menu {
   grid-area: menu;
+  width:80vh;
   font-size: 2vh;
-  justify-self: left;
+  justify-self: center;
   align-self: center;
   font-family: "Helvetica Neue", "Segoe UI", "Open Sans", "Helvetica Neue",
     sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: black;
-  cursor: pointer;
   @media (max-width: 1080px) {
     display: none;
   }
 
   a {
-    margin-left: 20%;
+    margin-left: 10%;
     letter-spacing: 2px;
   }
 }
@@ -104,6 +104,9 @@ nav {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+  @media(min-width:769px){
+    display:none;
+  }
   
 
   + label {
@@ -115,6 +118,10 @@ nav {
     border-radius: 50%;
     padding: 1vh;
     background: transparent;
+    @media(min-width:769px){
+      display:none;
+    }
+    
   }
 }
 
@@ -319,9 +326,13 @@ nav {
   color: white;
   mix-blend-mode: difference;
   z-index: 12;
+  @media(max-width:768px){
+    right:-140px;
+  }
 }
 
 .container {
+  
   height: 80vh;
   width: 90%;
   margin: 0 5% 15% 5%;
@@ -330,17 +341,23 @@ nav {
 .container-fluid {
   height: 80vh;
   width: 100%;
-  margin: 0 0 15% 0;
+  margin: 15% 0 15% 0;
 }
 
 .landing-page {
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "lp mp rp"
-    "tx  mp rp"
-    ". . .";
+  @media (min-width:1024px){
+    overflow:hidden;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "lp mp rp"
+      "tx  mp rp"
+      ". . .";
+  
+  }
+ 
+
 }
 
 .main-photo {
@@ -353,6 +370,9 @@ nav {
   grid-area: lp;
   width: 40%;
   justify-self: center;
+  @media(max-width:1024px){
+    display:none;
+  }
 }
 
 .right-photo {
@@ -360,6 +380,9 @@ nav {
   width: 55%;
   align-self: flex-end;
   justify-self: end;
+  @media(max-width:1024px){
+    display:none;
+  }
 }
 
 .bottom-left-text {
@@ -384,6 +407,14 @@ nav {
   letter-spacing: 4vh;
   font-weight: 600;
   display: inline;
+  @media(max-width:768px){
+    top:80%
+  }
+  @media(max-width:480px){
+    top:70%;
+    font-size:15vw;
+    letter-spacing: 2vh;
+  }
 }
 
 /* ABOUT */
@@ -397,6 +428,14 @@ nav {
     "tx .  pj"
     "tx pd pj"
     "tx .  pj";
+
+    @media(max-width:1024px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      'tx pj'
+      '. pj'
+      '.  .'
+    }
 }
 
 .text-about {
@@ -416,6 +455,10 @@ nav {
   width: 60%;
   justify-self: end;
   z-index: 9;
+  @media(max-width:768px){
+    width:80%;
+    justify-self: center;
+  }
 }
 
 .image-about-two {
@@ -424,6 +467,11 @@ nav {
   justify-self: left;
   align-self: end;
   z-index: 9;
+  @media(max-width:768px){
+    width:80%;
+    justify-self: center;
+  align-self: center;
+  }
 }
 
 .black-box {
@@ -439,6 +487,9 @@ nav {
     background: #189797;
     mix-blend-mode: overlay;
   }
+  @media(max-width:768px){
+    display:none;
+  }
 }
 
 .red-box {
@@ -452,6 +503,9 @@ nav {
   align-self: center;
   transform: translateY(-50%);
   z-index: 10;
+  @media(max-width:768px){
+    display:none;
+  }
 }
 
 /* Footer */
@@ -463,6 +517,9 @@ nav {
   height: 20vh;
   background: black;
   margin: 10% 0 5% 0;
+  @media(max-width:568px){
+    margin: 70% 0 5% 0;
+  }
 
   .footer-logo {
     font-weight: 700;

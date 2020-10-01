@@ -1,22 +1,16 @@
-import React, { useContext } from "react";
-import { Link } from 'gatsby'
-
-
+import React, { useContext } from "react"
+import { Link } from "gatsby"
 
 const VisibleNav = () => {
   return (
     <div className="side-menu">
-      <Link to="/products">
-        About
-      </Link>
-      <Link to="/products">
-        Collection
-      </Link>
-      <Link to="/products">
-        Contact
-      </Link>
-    </div>
-  );
-};
+      <Link to="/products">About</Link>
 
-export default VisibleNav;
+      <Link to="/products">Collection</Link>
+
+      <Link to="/products">Contact</Link>
+    </div>
+  )
+}
+
+export default VisibleNav
